@@ -1,0 +1,366 @@
+.doctor-dashboard__reviews-container {
+    background-color: #fff;
+    margin-bottom: 65px;
+    margin-top: 120px;
+    padding-top: 0;
+    padding: 0 60px;
+
+    // tablet
+    @media (max-width: $tablet) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    // mobile
+    @media (max-width: $mobile) {
+        margin-top: 0;     
+        margin-bottom: 0;   
+    }
+
+    .doctor-dashboard__wrapper__header {
+        padding-bottom: 0;
+        .doctor-dashboard__wrapper__body__filters {
+            padding: 30px 0 20px !important;
+
+            // mobile
+            @media (max-width: $mobile) {
+                padding: 20px 0 0!important;
+            }
+            
+            a {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 50px;
+                color: $black;
+
+                // mobile
+                @media (max-width: $mobile){
+                    min-width: fit-content;
+                    margin-right: 15px;
+                }
+
+                &:hover {
+                    color: #df054e;
+                    border-bottom: 1px solid #df054e;
+                }
+            }
+            .active {
+                color: #df054e;
+                border-bottom: 1px solid #df054e;
+            }
+        }
+    }
+}
+
+.doctor-app-reviews {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        &__header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 50px 0 80px;
+            width: 100%;
+            &__img {
+                display: block;
+                box-sizing: content-box;
+                min-width: 166px;
+                width: auto;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            &__content {
+                width: auto;
+
+                //mobile
+                @media (max-width: $mobile) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                h2 {
+                    font-family: $primary-font;
+                    font-size: 45px;
+                    font-weight: 300;
+                    line-height: 54px;
+                    color: $black-color;
+                    margin-bottom: 18px;
+
+                    // mobile 
+                    @media (max-width: $mobile) {
+                        display: none;
+                    }
+                }
+                p {
+                    font-family: $primary-font;
+                    font-size: 20px;
+                    font-weight: $light;
+                    line-height: 24px;
+                    color: $black-color;
+                    max-width: 550px;
+
+                    // mobile 
+                    @media (max-width: $mobile) {
+                        font-family: $primary-font!important;
+                        font-weight: $light !important;
+                        font-size: 16px !important;
+                        line-height: 1.5em !important;
+                        text-align: center !important;
+                        color: $black !important;
+                    }
+                }
+                .btn-primary {
+                    background-color: $primary-pink;
+                    color: $white;
+                    border: 1px solid $primary-pink;
+                    border-radius: 0px;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 1;
+                    padding: 10px 30px;
+                }
+            }
+        }
+        &__search {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px 0;
+            width: 100%;
+            h2 {
+                font-family: $primary-font;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 36px;
+                color: $black-color;
+            }
+            input {
+                background-image: url('../img/lupa.svg');
+                background-position: 98%;
+                background-repeat: no-repeat;
+                max-width: 370px;
+                width: 100%;
+            }
+            select {
+                font-family: $primary-font;
+                color: $black;
+                font-weight: 300;
+                padding: 9px;
+                border: 1px solid #cccccc;
+                font-size: 13px;
+                width: 200px;
+            }
+            &__form {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 585px;
+
+                @media ( max-width: 768px ) {
+                    flex-direction: column;
+                    max-width: 100%;
+                    select {
+                        margin-bottom: 12px;
+                        width: 100%;
+                        max-width: 370px;
+                    }
+                }
+            }
+        }
+        &__body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width: 100%;
+            
+            .app-review-module {
+                background: #fff;
+                border: 1px solid #eee;
+                padding: 24px 15px;
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0;
+                flex-grow: 0;
+                flex-basis: auto;
+                align-items: stretch;
+                height: 400px;
+                margin: 0 15px 0 0;
+                min-height: 338px;
+                width: 100%;
+                position: relative;
+                max-width: 380px;
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+                .relative {
+                    position: relative;
+                }
+                &__app-container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    padding: 0;
+                    width: 100%;
+                    &__app-img {
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        display: block;
+                        height: 64px;
+                        width: 68px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    &__app-column-right {
+                        width: auto;
+                        max-width: 100%;
+                        h2 {
+                            font-family: $primary-font;
+                            font-weight: 300;
+                            font-size: 30px;
+                            line-height: 33px;
+                            color: $black-color;
+                        }
+                    }
+                }
+                &__app-description {
+                    display: flex;
+                    flex-direction: column;
+                    padding-right: 15px;
+                    font-size: 16px;
+                    font-weight: 300;
+                    height: auto;
+                    max-height: 190px;
+                    line-height: 28px;
+                    width: 100%;
+                }
+                &__app-make-review {
+                    border-bottom: 1px solid $primary-pink;
+                    color: $primary-pink;
+                    font-family: $primary-font;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 20px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+                &__app-view-review {
+                    border-bottom: 1px solid $primary-pink;
+                    color: $primary-pink;
+                    font-family: $primary-font;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 20px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 160px;
+                }
+            }
+        }
+    }
+}
+
+.no-posts-content-mobile {
+    // tablet
+    @media (max-width: $tablet) {
+        display: none !important;
+    }
+}
+
+@media ( max-width: 1024px ) {
+    .doctor-app-reviews {
+        &__container {
+            &__body {
+                justify-content: center;
+                .app-review-module {
+                    margin: 0 10px 0 15px;
+                    &:nth-child(3) {
+                        margin-right: 15px;
+                    }
+                    &:nth-child(3n) {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: $mobile ) {
+    .doctor-dashboard__reviews-container {
+        padding: 0 30px;
+        .doctor-dashboard__wrapper__header {
+            padding: 0;
+        }
+        .doctor-dashboard__wrapper__body {
+            .no-posts-content {
+                flex-direction: column;
+                &__img-container {
+                    margin-right: 0;
+                    margin-top: 50px;
+                }
+            }
+        }
+        .doctor-dashboard__wrapper__body__filters {
+            padding: 30px 0 20px !important;
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow-x: scroll;
+            a {
+                margin-right: 0;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .doctor-app-reviews {
+        &__container {
+            &__header {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin: 50px 0 0;
+                &__img {
+                    margin-right: 0;
+                    margin-top: 50px;
+                }
+            }
+            &__search{
+                flex-direction: column;
+                padding: 0;
+                h2 {
+                    margin: 20px 0;
+                }
+            }
+            &__body {
+                /* flex-direction: column; */
+                align-items: center;
+                padding: 0;
+                .app-review-module {
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
+                    &:nth-child(3) {
+                        margin-left: 0 !important;
+                        margin-right: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}

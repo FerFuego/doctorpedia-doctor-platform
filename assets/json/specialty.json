@@ -1,0 +1,406 @@
+[
+    {
+        "Specialty":"Allergy and Immunology",
+        "SubSpecialty": []
+    },
+    {
+        "Specialty":"Anesthesiology",
+        "SubSpecialty": [
+            "Adult Cardiac Anesthesiology",
+            "Critical Care Medicine",
+            "Hospice and Palliative Medicine",
+            "Neurocritical Care",
+            "Pain Medicine",
+            "Pediatric Anesthesiology",
+            "Sleep Medicine"
+        ]
+    },
+    {
+        "Specialty":"Colon and Rectal Surgery",
+        "SubSpecialty": []
+    },
+    {
+        "Specialty":"Dermatology",
+        "SubSpecialty": [
+            "Micrographic Dermatologic Surgery",
+            "Dermatopathology",
+            "Pediatric Dermatology"
+        ]
+    },
+    {
+        "Specialty":"Emergency Medicine",
+        "SubSpecialty": [
+            "Anesthesiology Critical Care Medicine",
+            "Emergency Medical Services",
+            "Hospice and Palliative Medicine",
+            "Internal Medicine-Critical Care Medicine",
+            "Medical Toxicology",
+            "Neurocritical Care",
+            "Pain Medicine",
+            "Pediatric Emergency Medicine",
+            "Sports Medicine",
+            "Undersea and Hyperbaric Medicine"
+        ]
+    },
+    {
+        "Specialty":"Family Medicine",
+        "SubSpecialty": [
+            "Adolescent Medicine",
+            "Geriatric Medicine",
+            "Hospice and Palliative Medicine",
+            "Pain Medicine",
+            "Sleep Medicine",
+            "Sports Medicine"
+        ]
+    },
+    {
+        "Specialty":"Internal Medicine",
+        "SubSpecialty": [
+            "Adolescent Medicine",
+            "Adult Congenital Heart Disease",
+            "Advanced Heart Failure and Transplant Cardiology",
+            "Cardiovascular Disease",
+            "Clinical Cardiac Electrophysiology",
+            "Critical Care Medicine",
+            "Endocrinology, Diabetes and Metabolism",
+            "Gastroenterology",
+            "Geriatric Medicine",
+            "Hematology",
+            "Hospice and Palliative Medicine",
+            "Infectious Disease",
+            "Interventional Cardiology",
+            "Medical Oncology",
+            "Nephrology",
+            "Neurocritical Care",
+            "Pulmonary Disease",
+            "Rheumatology",
+            "Sleep Medicine",
+            "Sports Medicine",
+            "Transplant Hepatology"
+        ]
+    },
+    {
+        "Specialty":"Internal Medicine / Pediatrics"
+    },
+    {
+        "Specialty":"Clinical Biochemical Genetics",
+        "SubSpecialty": [
+            "Medical Biochemical Genetics",
+            "Molecular Genetic Pathology"
+        ]
+    },
+    {
+        "Specialty":"Clinical Genetics and Genomics (MD)",
+        "SubSpecialty": [
+            "Medical Biochemical Genetics",
+            "Molecular Genetic Pathology"
+        ]
+    },
+    {
+        "Specialty":"Laboratory Genetics and Genomics",
+        "SubSpecialty": [
+            "Medical Biochemical Genetics",
+            "Molecular Genetic Pathology"
+        ]
+    },
+    {
+        "Specialty":"Neurological Surgery",
+        "SubSpecialty": [
+            "Neurocritical Care"
+        ]
+    },
+    {
+        "Specialty":"Nuclear Medicine",
+        "SubSpecialty": []
+    },
+    {
+        "Specialty":"Obstetrics and Gynecology",
+        "SubSpecialty": [
+            "Complex Family Planning",
+            "Critical Care Medicine",
+            "Female Pelvic Medicine and Reconstructive Surgery",
+            "Gynecologic Oncology",
+            "Hospice and Palliative Medicine",
+            "Maternal–Fetal Medicine",
+            "Reproductive Endocrinology and Infertility"
+        ]
+    },
+    {
+        "Specialty":"Ophthalmology",
+        "SubSpecialty": []
+    },
+    {
+        "Specialty":"Orthopaedic Surgery",
+        "SubSpecialty": [
+            "Orthopaedic Sports Medicine",
+            "Surgery of the Hand"
+        ]
+    },
+    {
+        "Specialty":"Otolaryngology – Head and Neck Surgery",
+        "SubSpecialty": [
+            "Neurotology",
+            "Complex Pediatric Otolaryngology",
+            "Plastic Surgery Within the Head and Neck",
+            "Sleep Medicine"
+        ]
+    },
+    {
+        "Specialty":"Pathology – Anatomic/Pathology - Clinical",
+        "SubSpecialty": [
+            "Blood Banking/Transfusion Medicine",
+            "Clinical Informatics",
+            "Cytopathology",
+            "Dermatopathology",
+            "Hematopathology",
+            "Neuropathology",
+            "Pathology – Chemical",
+            "Pathology – Forensic",
+            "Pathology – Medical Microbiology",
+            "Pathology – Molecular Genetic",
+            "Pathology – Pediatric"
+        ]
+    },
+    {
+        "Specialty":"Pathology – Anatomic",
+        "SubSpecialty": [
+            "Blood Banking/Transfusion Medicine",
+            "Clinical Informatics",
+            "Cytopathology",
+            "Dermatopathology",
+            "Hematopathology",
+            "Neuropathology",
+            "Pathology – Chemical",
+            "Pathology – Forensic",
+            "Pathology – Medical Microbiology",
+            "Pathology – Molecular Genetic",
+            "Pathology – Pediatric"
+        ]
+    },
+    {
+        "Specialty":"Pathology – Clinical",
+        "SubSpecialty": [
+            "Blood Banking/Transfusion Medicine",
+            "Clinical Informatics",
+            "Cytopathology",
+            "Dermatopathology",
+            "Hematopathology",
+            "Neuropathology",
+            "Pathology – Chemical",
+            "Pathology – Forensic",
+            "Pathology – Medical Microbiology",
+            "Pathology – Molecular Genetic",
+            "Pathology – Pediatric"
+        ]
+    },
+    {
+        "Specialty":"Pediatrics",
+        "SubSpecialty": [
+            "Adolescent Medicine",
+            "Child Abuse Pediatrics",
+            "Developmental-Behavioral Pediatrics",
+            "Hospice and Palliative Medicine",
+            "Medical Toxicology",
+            "Neonatal-Perinatal Medicine",
+            "Pediatric Cardiology",
+            "Pediatric Critical Care Medicine",
+            "Pediatric Emergency Medicine",
+            "Pediatric Endocrinology",
+            "Pediatric Gastroenterology",
+            "Pediatric Hematology-Oncology",
+            "Pediatric Hospital Medicine",
+            "Pediatric Infectious Diseases",
+            "Pediatric Nephrology",
+            "Pediatric Pulmonology",
+            "Pediatric Rheumatology",
+            "Pediatric Transplant Hepatology",
+            "Sleep Medicine",
+            "Sports Medicine"
+        ]
+    },
+    {
+        "Specialty":"Physical Medicine and Rehabilitation",
+        "SubSpecialty": [
+            "Brain Injury Medicine",
+            "Hospice and Palliative Medicine",
+            "Neuromuscular Medicine",
+            "Pain Medicine",
+            "Pediatric Rehabilitation Medicine",
+            "Spinal Cord Injury Medicine",
+            "Sports Medicine"
+        ]
+    },
+    {
+        "Specialty":"Plastic Surgery",
+        "SubSpecialty": [
+            "Plastic Surgery Within the Head and Neck",
+            "Surgery of the Hand"
+        ]
+    },
+    {
+        "Specialty":"Aerospace Medicine",
+        "SubSpecialty": [
+            "Addiction Medicine",
+            "Clinical Informatics",
+            "Medical Toxicology",
+            "Undersea and Hyperbaric Medicine"
+        ]
+    },
+    {
+        "Specialty":"Occupational Medicine",
+        "SubSpecialty": [
+            "Addiction Medicine",
+            "Clinical Informatics",
+            "Medical Toxicology",
+            "Undersea and Hyperbaric Medicine"
+        ]
+    },
+    {
+        "Specialty":"Public Health and General Preventive Medicine",
+        "SubSpecialty": [
+            "Addiction Medicine",
+            "Clinical Informatics",
+            "Medical Toxicology",
+            "Undersea and Hyperbaric Medicine"
+        ]
+    },
+    {
+        "Specialty":"Psychiatry",
+        "SubSpecialty": [
+            "Addiction Psychiatry",
+            "Brain Injury Medicine",
+            "Child and Adolescent Psychiatry",
+            "Clinical Neurophysiology",
+            "Consultation-Liaison Psychiatry",
+            "Epilepsy",
+            "Forensic Psychiatry",
+            "Geriatric Psychiatry",
+            "Hospice and Palliative Medicine",
+            "Neurocritical Care",
+            "Neurodevelopmental Disabilities",
+            "Neuromuscular Medicine",
+            "Pain Medicine",
+            "Sleep Medicine",
+            "Vascular Neurology"
+        ]
+    },
+    {
+        "Specialty":"Neurology",
+        "SubSpecialty": [
+            "Addiction Psychiatry",
+            "Brain Injury Medicine",
+            "Child and Adolescent Psychiatry",
+            "Clinical Neurophysiology",
+            "Consultation-Liaison Psychiatry",
+            "Epilepsy",
+            "Forensic Psychiatry",
+            "Geriatric Psychiatry",
+            "Hospice and Palliative Medicine",
+            "Neurocritical Care",
+            "Neurodevelopmental Disabilities",
+            "Neuromuscular Medicine",
+            "Pain Medicine",
+            "Sleep Medicine",
+            "Vascular Neurology"
+        ]
+    },
+    {
+        "Specialty":"Neurology with Special Qualification in Child Neurology",
+        "SubSpecialty": [
+            "Addiction Psychiatry",
+            "Brain Injury Medicine",
+            "Child and Adolescent Psychiatry",
+            "Clinical Neurophysiology",
+            "Consultation-Liaison Psychiatry",
+            "Epilepsy",
+            "Forensic Psychiatry",
+            "Geriatric Psychiatry",
+            "Hospice and Palliative Medicine",
+            "Neurocritical Care",
+            "Neurodevelopmental Disabilities",
+            "Neuromuscular Medicine",
+            "Pain Medicine",
+            "Sleep Medicine",
+            "Vascular Neurology"
+        ]
+    },
+    {
+        "Specialty":"Diagnostic Radiology",
+        "SubSpecialty": [
+            "Hospice and Palliative Medicine",
+            "Neuroradiology",
+            "Nuclear Radiology",
+            "Pain Medicine",
+            "Pediatric Radiology"
+        ]
+    },
+    {
+        "Specialty":"Interventional Radiology and Diagnostic Radiology",
+        "SubSpecialty": [
+            "Hospice and Palliative Medicine",
+            "Neuroradiology",
+            "Nuclear Radiology",
+            "Pain Medicine",
+            "Pediatric Radiology"
+        ]
+    },
+    {
+        "Specialty":"Medical Physics (Diagnostic, Nuclear, Therapeutic)",
+        "SubSpecialty": [
+            "Hospice and Palliative Medicine",
+            "Neuroradiology",
+            "Nuclear Radiology",
+            "Pain Medicine",
+            "Pediatric Radiology"
+        ]
+    },
+    {
+        "Specialty":"Radiation Oncology",
+        "SubSpecialty": [
+            "Hospice and Palliative Medicine",
+            "Neuroradiology",
+            "Nuclear Radiology",
+            "Pain Medicine",
+            "Pediatric Radiology"
+        ]
+    },
+    {
+        "Specialty":"General Surgery",
+        "SubSpecialty": [
+            "Complex General Surgical Oncology",
+            "Hospice and Palliative Medicine",
+            "Pediatric Surgery",
+            "Surgery of the Hand",
+            "Surgical Critical Care"
+        ]
+    },
+    {
+        "Specialty":"Vascular Surgery",
+        "SubSpecialty": [
+            "Complex General Surgical Oncology",
+            "Hospice and Palliative Medicine",
+            "Pediatric Surgery",
+            "Surgery of the Hand",
+            "Surgical Critical Care"
+        ]
+    },
+    {
+        "Specialty":"Thoracic and Cardiac Surgery",
+        "SubSpecialty": [
+            "Congenital Cardiac Surgery"
+        ]
+    },
+    {
+        "Specialty":"Urology",
+        "SubSpecialty": [
+            "Female Pelvic Medicine and Reconstructive Surgery",
+            "Pediatric Urology"
+        ]
+    },
+    {
+        "Specialty":"Cardiology",
+        "SubSpecialty": [
+            "Cardiovascular Disease"
+        ]
+    }
+]

@@ -1,0 +1,126 @@
+/*-------------------------------
+		0.1.-VARIABLES
+--------------------------------*/
+
+
+/*----------- Fonts -------------*/
+
+$primary-font: 'NeufileGrotesk', sans-serif;
+$primary-font-medium: 'NeufileGrotesk-medium', sans-serif;
+
+$logo-font: 'Visby', sans-serif;
+
+$light :300;
+
+$regular:400;
+
+$medium: 500;
+
+$semibold: 600;
+
+$bold: 900;
+
+$italic:italic;
+
+/*----------- Main Colors -------------*/
+
+//Primary colors
+$primary-color: #4432a7;
+
+$primary-pink: #df054e;
+
+$primary-blue: #303248;
+
+$primary-grey: #626790;
+
+
+//Secondary colors
+
+$teal: #21d1e3;
+
+$baby-blue: #4a90e2;
+
+$maroon: #50274f;
+
+$bright-purple: #000;
+
+$turquoise: #1CA4B2;
+
+$black-color: #212529;
+
+//Tertiary colors
+
+$pea-green:  #4432a7;
+
+$off-white: #f2f2f2;
+
+$off-white-2: #FCFCFC;
+
+$lemon-yellow: #f8e71c;
+
+$danger-color:#C61F49;
+
+$explore-color: #8D56F9;
+
+$reviews-color: #7E4CDF;
+
+$videolibrary-footer: #5D5D5D;
+
+$alphabet-border: #D8D8D8;
+
+$text-muted: #979797;
+
+$line: #E8E6E6;
+
+$light-text: #8D8D8D;
+
+//Basic colors
+
+$transparent-white: rgba(255,255,255,0.3);
+
+$transparent-background: rgba(255,255,255,0.8);
+
+$transparent-black: rgba(0,0,0,0.5);
+
+$white:#fff;
+
+$black:#000;
+
+$light-grey: #f2f2f2;
+
+$ultra-light-grey: #F6F6F6;
+
+$modal-text: #857979;
+
+
+//Action Colors
+
+$danger: red;
+
+
+//Elements Colors
+
+$border-color: #cccccc;
+
+//Border Utilities
+$border-utilities-color: #777777;
+
+//Shadows
+$shadow: 0 0 8px 0 rgba(191, 191, 191, .5);
+
+//Checkbox-width
+$checkbox-width: 18px;
+
+//Responsive Breakpoints
+
+$tablet: 1025px;
+
+$mobile: 767px;
+
+$sm: 576px;
+
+// Home Container Percent
+
+$position-home: 20%;
+
+$position-home-tablet: 6%;

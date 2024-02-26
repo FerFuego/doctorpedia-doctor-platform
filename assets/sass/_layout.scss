@@ -1,0 +1,62 @@
+*:focus { outline: none; } 
+.btn-primary.focus, .btn-primary:focus, .btn-secondary.focus, .btn-secondary:focus {
+    box-shadow: none !important;
+}
+.large-dashboard {
+    background-color: $white;
+
+    &--grey {
+        background-color: $light-grey !important;
+
+        // mobile
+        @media (max-width: $mobile) {
+            background-color: $white !important;
+            .container-fluid {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+
+}
+
+.background-white {
+    background-color: $white;
+    height: 550px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.background-grey {
+    @extend .background-white;
+    background-color: $light-grey;
+}
+.text-min {
+    font-size: 12px;
+}
+.editor {
+    border: 1px solid $border-color;
+    padding: 11.6px;
+    height: 300px;
+    width: 100%;
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        strong {
+            font-weight: 900;
+        }
+
+        em {
+            font-style: italic;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .visible-xs {
+        display: block;
+    }
+}

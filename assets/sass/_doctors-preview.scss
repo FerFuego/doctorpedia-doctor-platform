@@ -1,0 +1,100 @@
+.blog-post-preview-container {
+    .header {
+        .details {
+            .author-avatar {
+                img {
+                    border-radius: 50%;
+                }
+            } 
+        }
+    } 
+    .body {
+        font-family: $primary-font;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: $light;
+        h1 {
+            font-family: $primary-font;
+            font-size: 28px;
+            font-weight: $medium;
+            line-height: 1.5em;
+        }
+        h2 {
+            font-family: $primary-font;
+            font-size: 25px !important;
+            font-weight: $medium;
+            line-height: 1.5em;
+            margin-bottom: 5px;
+        }
+        h3 {
+            font-family: $primary-font;
+            font-size: 20px;
+            font-weight: $medium;
+            line-height: 1.5em;
+        }
+        p {
+            font-family: $primary-font;
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: $light;
+        }
+        em {
+            font-style: italic !important;
+        }
+        blockquote, q {
+            quotes: none;
+            p {
+                color: $primary-pink;
+                font-size: 20px !important;
+                font-weight: $light;
+                line-height: 32px;
+            }
+        }
+        blockquote {
+            quotes: none;
+            color: $primary-pink;
+            font-size: 20px !important;
+            font-weight: $light;
+            line-height: 32px;
+        }
+        .ql-align-justify {
+            text-align: justify;
+        }
+        .ql-align-right {
+            text-align: right;
+        }
+        .ql-align-left {
+            text-align: left;
+        }
+        .ql-size-small {
+            font-size: 0.75em;
+        }
+        .ql-size-huge {
+            font-size: 2.5em;
+        }
+        .ql-size-large {
+            font-size: 1.5em;
+        }
+        ul {
+            margin-left: 18px;
+            list-style-type: circle !important;
+            padding: 15px 0;
+            li {
+                font-family: $primary-font;
+                font-size: 18px;
+                line-height: 32px;
+                font-weight: $medium;
+                list-style: outside;
+            }
+        }
+        ol {
+            margin-left: 18px;
+            list-style-type: decimal !important;
+            padding: 15px 0;
+            li {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+    }
+}

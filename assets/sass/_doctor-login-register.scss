@@ -1,0 +1,254 @@
+/*-------------------
+    LOGIN
+-------------------*/
+.blogging-login {
+    background-color: #f2f2f2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 85px;
+    padding: 50px 0;
+
+    .doctorsform {
+        box-shadow: 0 4px 4px rgba($black, 0.25);
+        
+        .body-form {
+            background-color: $white;
+            padding: 30px 46px 52px;
+            width: 422px;
+            max-width: 100%;
+    
+            h3 {
+                margin-bottom: 40px;
+                font-weight: $regular;
+                font-size: 24px;
+                width: 100%;
+                color: $primary-pink;
+                text-transform: uppercase;
+            }
+
+            .input {
+                color: $black;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid $line;
+                font-size: 16px;
+                font-weight: $regular;
+                margin-bottom: 50px;
+                padding: 10px 10px 6px 0;
+
+                &--password {
+                    margin-bottom: 13px;
+                }
+
+                &::-webkit-input-placeholder { /* Edge */
+                    color: $line;
+                }
+                
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: $line;
+                }
+                
+                &::placeholder {
+                    color: $alphabet-border;
+                }
+            }
+
+            .form-group {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0;
+                input,
+                .passwordForm {
+                    width: 100%;
+                    max-width: 48%;
+                    input {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+                @media (max-width: $mobile) {
+                    flex-direction: column;
+                    input,
+                    .passwordForm {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            &__copy {
+                margin-bottom: 30px;
+            }
+
+            label, p {
+                font-family: $primary-font;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 133.2%;
+                color: $black;
+            }
+
+            .passwordForm {
+                position: relative;
+                i {
+                    color: $line;
+                    cursor: pointer;
+                    position: absolute;
+                    right: 5px;
+                    top: 12px;
+                }
+            }
+
+            .forgot{
+                position: relative;
+                text-align: right;
+                width: 100%;
+                z-index: 2;
+                a {
+                    border-bottom: 1px solid $teal;
+                    color: $teal;
+                    font-size: 14px;
+                }
+            }
+
+            .messageform{
+                height: auto;
+                padding: 13px 0;
+                position: relative;
+                width: 100%;
+                p {
+                   text-align: center;
+                   width: 100%;
+                }
+            }
+    
+            .button-primary {
+                background-color: $primary-blue;
+                border: none;
+                border-radius: 3px;
+                color: $white;
+                font-size: 18px;
+                font-weight: $medium;
+                line-height: 24px;
+                padding: 15px;
+                width: 100%;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+            }
+
+            .register-terms-conditions {
+                color: $baby-blue;
+                border-bottom: 1px solid $baby-blue;
+            }
+
+        }
+        
+        .form-footer {
+            border-top: 1px solid $line;
+            padding: 16px 0;
+            text-align: center;
+            width: 100%;
+            p {
+                font-size: 13px;
+                a {
+                    color: $primary-color
+                }
+            }
+        }
+    }
+
+    .register_block {
+        max-width: 340px;
+        padding: 46px 44px 63px 65px;
+        background: $primary-blue;
+        box-shadow: 0 4px 4px rgba($black, 0.25);
+
+        .register_block__title {
+            color: $white;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
+        }
+
+        .register_block__copy {
+            color: $white;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            margin-bottom: 75px;
+        }
+
+        .register_block__cta {
+            color: $white;
+            border: 1px solid $white;
+            border-radius: 3px;
+            padding: 9px 30px;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    @media (max-width: $mobile ) {
+        flex-direction: column;
+        #loginform{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+            .body-form{
+                padding: 20px;
+                width: 340px;
+            }
+        }
+    }
+
+}
+
+/*-------------------
+    REGISTER
+-------------------*/
+.doctors-register {
+    @extend .blogging-login;
+    .doctorsform{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .body-form {
+            width: 550px;
+            h3 {
+                margin-bottom: 20px;
+            }
+            .input {
+                margin-bottom: 35px !important;
+            }
+        }
+    }
+}
+
+// tablet
+@media (max-width: $tablet) {
+    .doctors-register {
+        flex-direction: column-reverse;
+        .doctorsform{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            .body-form {
+                width: auto;
+                max-width: 550px;
+            }
+        }
+    }
+}
+
+// mobile
+@media (max-width: $mobile) {
+    .doctors-register {
+        .doctorsform {
+            .body-form {
+                width: 340px;
+            }
+        }
+    }
+}

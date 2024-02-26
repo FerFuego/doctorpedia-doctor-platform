@@ -1,0 +1,43 @@
+{
+  "name": "blogging-platform",
+  "version": "1.0.0",
+  "description": "Blogging Platform for Doctorpedia build scripts",
+  "main": "gulpfile.js",
+  "scripts": {
+    "deploy": "gulp && gulp stage && gulp prod",
+    "gulp": "node_modules/.bin/gulp",
+    "watch": "gulp && gulp watch",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "bootstrap": "4.4.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "2.6.0",
+    "gulp-cssnano": "2.1.1",
+    "gulp-eslint": "^5.0.0",
+    "gulp-imagemin": "2.4.0",
+    "gulp-jshint": "2.0.0",
+    "gulp-notify": "2.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.0.0",
+    "gulp-uglify": "1.5.3",
+    "jshint": "^2.9.7"
+  },
+  "private": true,
+  "dependencies": {
+    "composer": "^4.1.0",
+    "gulp-cli": "^2.3.0",
+    "natives": "^1.1.6"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.4"
+  }
+}

@@ -1,0 +1,150 @@
+.doctor-dashboard__blogs-container {
+    background-color: $white;
+    margin-bottom: 65px;
+    margin-top: 120px;
+    padding-top: 0;
+    padding: 0 60px;
+
+    // tablet
+    @media (max-width: $tablet) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .doctor-dashboard__wrapper__header {
+        padding-bottom: 0;
+        .doctor-dashboard__wrapper__body__filters {
+            padding: 30px 0 20px!important;
+            // mobile
+            @media (max-width: $mobile) {
+                padding: 20px 0 0!important;
+            }
+            a {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 50px;
+                color: $black;
+
+                // mobile
+                @media (max-width: $mobile){
+                    min-width: fit-content;
+                }
+            }
+            .active {
+                color: $primary-pink;
+            }
+        }
+    }
+
+    .doctor-dashboard__wrapper__body {
+        margin-bottom: 0;
+
+        .doctors-app-reviewed {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    
+        .no-posts-content {
+            padding: 50px 0 84px;
+            background: $white;
+            width: 100%;
+
+            //mobile
+            @media (max-width: $mobile) {
+                padding: 50px 0 0;
+            }
+            
+            &__text-container {
+                //mobile
+                @media (max-width: $mobile) {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        
+            .no-posts-content__title {
+                font-family: $primary-font;
+                font-size: 45px;
+                font-weight: $light;
+                line-height: 54px;
+                color: rgba($black, .8);
+                margin-bottom: 25px;
+
+                //mobile
+                @media (max-width: $mobile) {
+                    display: none;
+                }
+            }
+        
+            .no-posts-content__copy {
+                max-width: 668px;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 24px;
+                margin-bottom: 50px;
+            }
+        
+            .no-posts-content__cta {
+                background-color: $primary-pink;
+                color: $white;
+                font-size: 18px;
+                letter-spacing: -0.33px;
+                padding: 14px 27px;
+            }
+        
+            .no-posts-content__img-container{
+                margin-right: 0px;
+                margin-top: 20px;
+                max-width: 560px;
+
+                //mobile
+                @media (max-width: $mobile) {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        
+        }
+    }
+
+    .no-posts-content-mobile {
+        // tablet
+        @media (max-width: $tablet) {
+            display: none !important;
+        }
+    }
+    
+}
+.custom-hidden-lg {
+    display: none;
+    //tablet
+    @media (max-width: $tablet) {
+        display: block !important;
+    }
+}
+//mobile
+@media ( max-width: $mobile ) {
+    .doctor-dashboard__blogs-container {
+        margin-top: 0;
+        margin-bottom: 0;
+        .doctor-dashboard__wrapper__header {
+            padding: 0;
+        }
+        .doctor-dashboard__wrapper__body {
+            .no-posts-content {
+                flex-direction: column;
+            }
+        }
+        .doctor-dashboard__wrapper__body__filters {
+            padding: 30px 0 20px !important;
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow-x: scroll;
+        }
+    }
+}

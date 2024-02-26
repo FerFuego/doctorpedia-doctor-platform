@@ -1,0 +1,354 @@
+.doctor-dashboard-videos {
+    .prev-video {
+        display: inline;
+        position: absolute;
+        top: 55%;
+        left: 6%;
+    }
+    .next-video {
+        display: inline;
+        position: absolute;
+        top: 55%;
+        right: 6%;
+    }
+    .doctor-dashboard__wrapper {
+        padding: 0 60px !important;
+        &__header {
+            padding-bottom: 0;
+            &__body__filters {
+                padding: 30px 0 20px !important;
+
+                // mobile
+                @media (max-width: $mobile) {
+                    padding: 24px 0 0!important;
+                }
+
+                a {
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 50px;
+                    color: $black;
+
+                    &:hover {
+                        color: #df054e;
+                    }
+                }
+                .active {
+                    color: #df054e;
+                }
+            }
+        }
+        &__body {
+            &__container,
+            &__articles {
+                .blog-post-preview {
+                    // mobile
+                    @media (max-width: $mobile) {
+                        width: 100%;
+                        max-width: 100%;
+                        min-width: unset !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blogging-video-item {
+    margin: 0 10px 30px;
+    .waiting {
+        background-color:#4432A7;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin-bottom: 17px;
+        }
+        p {
+            color: $white;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+    p {
+        color: $black;
+        font-size: 14px;
+        line-height: 22px;
+        strong {
+            font-weight: 900;
+        }
+
+        em {
+            font-style: italic;
+        }
+    }
+}
+
+.blogging-video-item-slider {
+    margin: 0 auto 30px !important;
+
+    // mobile
+    @media (max-width: $mobile) {
+        max-width: 100%;
+    }
+}
+
+.blogging-video-editor {
+    .doctor-dashboard__wrapper__header {
+        padding-bottom: 0;
+        .doctor-dashboard__wrapper__body__filters {
+            padding: 30px 0 10px!important;
+
+            //mobile
+            @media (max-width: $mobile) {
+                padding: 20px 0 10px!important;
+            }
+
+            a {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 50px;
+                color: $black;
+            }
+            .active {
+                color: $primary-pink;
+            }
+        }
+
+    }
+    .filters-mobile {
+        // tablet
+        @media (max-width: $tablet) {
+            border: none;
+            .doctor-dashboard__wrapper__body__filters {
+                display: none;
+            }
+        }
+    }
+    .doctor-dashboard__wrapper__body {
+        padding: 0 0 40px;
+        h2 {
+            font-weight: $light;
+            font-size: 45px;
+            line-height: 1.2em;
+            padding-top: 73px;
+
+            // mobile 
+            @media (max-width: $mobile) {
+                display: none;
+            }
+        }
+    }
+    .video-box-preview {
+        width: 100% !important;
+        height: 302px !important;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .video-preview {
+            background-color: $black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        label {
+            // mobile
+            @media (max-width: $mobile) {
+                font-weight: $light !important;
+                font-size: 18px !important;
+                line-height: 1.2em !important;
+                text-transform: capitalize !important;
+                border-bottom: 1px solid $primary-pink;
+            }
+        }
+    }
+    .ql-editor {
+        height: 135px !important;
+    }
+    .btn-primary {
+        margin-right: 0;
+    }
+    .video-progress-bar-container {
+        #video-progress-bar {
+            height: 15px;
+            width: 1%;
+        }
+        .video-progress-bar-status {
+            background-color: $white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            p,span {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 20px;
+                display: block;
+                color: #4432A7;
+            }
+        }
+    }
+    
+}
+
+.doctors-dashboard-new-videos {
+    width: 100%;
+    .no-posts-content {
+        padding: 50px 0 82px !important;
+        max-width: 100% !important;
+        width: 100%;
+
+        // mobile
+        @media (max-width: $mobile) {
+            padding: 0 !important;
+        }
+    }
+}
+
+#platform-video-trascript {
+    margin-bottom: 45px;
+    h1 {
+        border-bottom: 1px solid $border-color;
+        font-size: 36px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        #transcript {
+            float: right;
+            text-align: right;
+            span {
+                border-bottom: 1px solid $primary-pink;
+                color: $primary-pink;
+                cursor: pointer;
+                font-size: 18px;
+                vertical-align: middle;
+            }
+        }
+    }
+    #tanscription {
+        line-height: 1.3;
+        padding: 50px 20%;
+        width: 100%;
+        font-family: Arial, $primary-font;
+        p {
+            color: $black;
+            font-size: 14px;
+            line-height: 22px;
+            strong {
+                font-weight: 900;
+            }
+    
+            em {
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.video-edit-mobile {
+    // mobile
+    @media (max-width: $mobile) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.upload-video-box-container {
+    // mobile
+    @media (max-width: $mobile) {
+        margin-bottom: 32px;
+    }
+}
+
+.video-edit-mobile {
+    // mobile
+    @media (max-width: $mobile) {
+        padding: 0;
+        margin-top: 24px !important;
+        justify-content: center !important;
+    }
+
+    a {
+        // mobile
+        @media (max-width: $mobile) {   
+            max-width: 172px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+    }
+}
+
+@media ( max-width: $mobile ) {
+    .doctor-dashboard-videos {
+        .doctor-dashboard__wrapper {
+            padding: 0 30px !important;
+            .doctor-dashboard__wrapper__header {
+                padding: 0;
+            }
+            .doctor-dashboard__wrapper__body {
+                .no-posts-content {
+                    flex-direction: column;
+                    &__img-container {
+                        justify-content: center;
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 0;
+                        margin-top: 0;
+                    }
+                }
+            }
+            .doctor-dashboard__wrapper__body__filters {
+                padding: 30px 0 20px !important;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+
+                //mobile
+                @media (max-width: $mobile) {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    overflow-x: scroll;
+                    padding: 20px 0 0!important;
+                }
+
+                a {
+                    // mobile
+                    @media (max-width: $mobile){
+                        min-width: fit-content;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 375px ) {
+    .video-box-container {
+        width: 300px !important;
+        max-width: 300px !important;
+        min-width: 300px !important;
+    }
+}
+
+@media ( max-width: 325px ) {
+    .video-box-container {
+        width: 260px !important;
+        max-width: 260px !important;
+        min-width: 260px !important;
+    }
+}

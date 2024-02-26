@@ -1,0 +1,545 @@
+//********ADD REVIEW MODAL**********// 
+.doctors-add-review-modal {
+    background-color: #f9f9f9;
+    overflow: auto;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 800px;
+    height: 91vh;
+    z-index: 98;
+
+    #acf-form-data h2 {
+        font-family: $primary-font;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 36px;
+        color: $primary-pink;
+        margin-bottom: -60px; 
+    }
+
+    .acf-field .acf-label label {
+        display: block;
+        font-weight: 400;
+        margin: 0 0 3px;
+        padding: 0;
+    }
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+        height: 100vh;
+        top: 0;
+    }
+
+    #message{
+        color: $white;
+    }
+
+    .acf-notice.-error {
+        max-width: 220px;
+    }
+
+    .acf-notice.-dismiss {
+        padding: 10px 35px;
+        position: fixed;
+        right: 15px;
+        top: 72px;
+        z-index: 200;
+    }
+
+    &__box {
+        background: $white;
+        padding: 50px 75px 15px;
+
+        @media screen and (max-width:992px) {
+            padding: 30px 35px;
+        }
+
+        @media screen and (max-width:$sm) {
+            padding: 30px 25px;
+            margin-top: 70px;
+        }
+
+    }
+
+    .close-modal {
+        cursor: pointer;
+        @media screen and (max-width:767px) {
+            padding-right: 15px;
+        }
+    }
+
+    &__rating-box-title {
+        font-size: 20px;
+    }
+
+    &__rating-box-group {
+        :nth-child(3) {
+            border-bottom: 1px solid $line;
+        }
+    }
+
+    &__rating-box {
+        padding: 10px 0;
+    }
+
+    &__overall-group {
+        padding: 15px 0;
+
+        @media screen and (max-width:$sm) {
+            padding-bottom: 25px;
+        }
+    }
+
+    &__overall-number {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    &__overall-text {
+        font-size: 22px;
+    }
+
+
+    &__header {
+        height: 70px;
+        background: $primary-pink;
+        // mobile
+        @media (max-width: $mobile) {
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+        }
+    }
+
+    &__title {
+        color: $white;
+        font-weight: 300;
+        font-size: 26px;
+
+        @media screen and (max-width:992px) {
+            padding-left: 35px;
+        }
+    }
+
+    &__which-app {
+        color: $black;
+        font-size: 22px;
+
+        @media screen and (max-width: 992px) {
+            padding-bottom: 10px;
+        }
+    }
+
+    &__personal-info-title {
+        color: $black;
+        font-size: 22px;
+    }
+
+    &__personal-info {
+        color: $black;
+        font-size: 18px;
+    }
+
+
+    &__text-area-section-title {
+        color: $black;
+        font-size: 22px;
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 180px;
+    }
+
+    &__required {
+        color: $primary-pink;
+        padding-left: 5px;
+    }
+
+    &__row-3 {
+        .btn-download--teal {
+            white-space: pre;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    &__approval {
+        @media screen and (max-width:$sm) {
+            padding-bottom: 15px;
+        }
+    }
+
+    .input-group-prepend {
+        width: 100%;
+    }
+
+    .input-group {
+        width: 80%;
+    }
+
+    .close-modal {
+        outline: none;
+        border: none;
+        background: transparent;
+    }
+
+    .acf-fields.-border {
+        border: 0 !important;
+        background: transparent !important;
+    }
+
+    .acf-field[data-width]+.acf-field[data-width] {
+        border-left: 0 !important;
+    }
+
+    .acf-fields>.acf-field {
+        border-top: 0 !important;
+        padding: 10px 0;
+    }
+
+    .acf-field input[type="text"] {
+        width: 100%;
+    }
+
+    //Modal Header
+
+    .acf-fields {
+
+        .modal-header {
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: none;
+
+            @media screen and (max-width:992px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .acf-input {
+                width: 50%;
+                background: white;
+                padding: 5px 0;
+                border-radius: 0;
+
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }
+
+                select {
+                    padding: 7px 2px;
+                    border: 1px solid $line;
+                }
+            }
+
+            .acf-label {
+                width: 50%;
+
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        //WHICH APP ARE YOU REVIEWING 
+        .app-which-app {
+
+            display: flex;
+
+            @media screen and (max-width: $mobile) {
+                flex-direction: column;
+            }
+        }
+
+        //Ratings Column
+        .ratings {
+            font-size: 22px;
+            font-weight: 500;
+            padding-top: 15px;
+            position: relative;
+            width: 100% !important;
+
+            .-top {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+
+                // mobile
+                @media (max-width: $mobile) {
+                    flex-direction: column;
+                }
+            }
+
+            .acf-field {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 0;
+                width: 45%;
+
+                // mobile
+                @media (max-width: $mobile) {
+                    width: 100%;
+                }
+            }
+
+            .acf-field:last-child {
+                width: 100%;
+            }
+
+            @media screen and (max-width:992px) {
+                width: 100% !important;
+            }
+
+            &:first-child {
+                label {
+                    font-size: 22px;
+                    font-weight: 500 !important;
+                }
+            }
+
+            .value_for_money {
+
+                label {
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+
+            }
+
+            .ease_of_use {
+
+                label {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+            }
+
+            .features {
+                label {
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+            }
+            
+            #overall_ratings{
+                border-top: 1px solid $line!important;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding-top: 34px;
+                padding-bottom: 50px;
+                .acf-label {
+                    margin-right: 30px;
+                }
+            }
+            
+            .fa-star-o:before {
+                content: "\f006";
+            }
+
+            .stars {
+                a {
+                    font-size: 22px;
+                }
+
+                label {
+                    font-weight: 400;
+
+
+                }
+            }
+
+        }
+
+
+        //Personal Information
+        .personal_info {
+            width: 50%;
+            padding-top: 15px;
+            display: none;
+
+            @media screen and (max-width:992px) {
+                width: 100% !important;
+            }
+
+            .acf-label {
+                label {
+                    font-weight: 500;
+                    font-size: 22px;
+                }
+
+            }
+
+            .acf-input {
+                input {
+                    height: 35px;
+                }
+            }
+
+            .personal_info_name {
+                label {
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+
+                input {
+                    width: 90%;
+
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .personal_info_email {
+                label {
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+
+
+                input {
+                    width: 90%;
+
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                    }
+                }
+
+                .acf-input {
+                    display: flex;
+                    flex-direction: column-reverse;
+
+                    .acf-input-append {
+                        background: transparent;
+                        border: none;
+                        color: $light-text;
+                        font-family: $primary-font;
+                        font-size: 12px;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
+
+        //CHECKBOX
+        .-border {
+            .private-checkbox {
+                label {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                .sub {
+                    color: $light-text;
+                    padding-left: 20px;
+                    font-size: 12px;
+
+
+                    @media screen and (max-width: 1350px) {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+
+        ///TEXTAREA
+
+        .app-textarea {
+            textarea {
+                border: 1px solid $line;
+            }
+        }
+
+        .pros_of_the_app {
+            textarea {
+                border: 1px solid $line;
+            }
+        }
+
+        .cons_of_the_app {
+            textarea {
+                border: 1px solid $line;
+            }
+        }
+
+        .acf-field-textarea .acf-label label {
+            font-size: 22px;
+            font-weight: 400;
+
+        }
+
+
+        .acf-input {
+            a {
+                font-size: 16px;
+                padding: 0 1px;
+                cursor: pointer;
+                color: $danger-color;
+                text-decoration: none !important;
+
+                &:hover,
+                &:active,
+                &:visited {
+                    color: $danger-color;
+                }
+            }
+        }
+
+
+        .acf-field .acf-input .acf-input-wrap input {
+            border: 1px solid $line;
+        }
+
+        .acf-field-select .acf-label label {
+            font-size: 18px;
+            font-weight: 300;
+
+        }
+
+        //////////////END AC-FIELDS
+    }
+
+    //////SUBMIT AREA
+    .acf-form-submit .acf-button .btn-download {
+        background: $primary-pink;
+        color: $white;
+        border: none;
+        outline: none;
+        font-weight: 300;
+        cursor: pointer;
+    }
+
+    .btn-download {
+        background: $primary-pink !important;
+        border: 1px solid $primary-pink !important;
+    }
+
+    .acf-form-submit {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    .g-recaptcha{
+        position: absolute;
+        left: 0;
+        top: -13px;
+    }
+
+
+}

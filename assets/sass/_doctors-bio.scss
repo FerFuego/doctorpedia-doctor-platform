@@ -1,0 +1,160 @@
+.doctor-dashboard__bio {
+    position: relative;
+    z-index: 1;
+
+    .doctor-dashboard__bio-content {
+        // Avatar Container
+        .doctor-dashboard__bio-avatar-container {
+            max-width: 225px;
+            margin-right: 100px;
+            .doctor-dashboard__bio-avatar {
+                background-size: cover;
+                background-position: center center;
+                border-radius: 50%;
+                width: 225px;
+                height: 225px;
+                margin-bottom: 30px;
+            }
+
+            .doctor-dashboard__bio-social {
+               
+                
+                .doctor-dashboard__bio-social-link {
+                    margin-right: 12px;
+                    max-width: 47px;
+                    margin-bottom: 12px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .doctor-dashboard__bio-public {
+                a {
+                    border-bottom: 1px solid $primary-pink;
+                    color: $primary-pink;
+                    margin-top: 20px;
+                    padding-bottom: 2px;
+                }
+            }
+        }
+
+        // Description Container
+        .doctor-dashboard__bio-description {
+
+            // Title
+            .doctor-dashboard__bio-description-title {
+                font-size: 40px;
+                line-height: 49px;
+                color: $primary-color;
+                margin-bottom: 10px;
+            }
+            
+            // Subtitle
+            .doctor-dashboard__bio-description-subtitle {
+                font-size: 28px;
+                color: $black;
+                margin-bottom: 30px;
+            }
+
+            // Copy
+            .doctor-dashboard__bio-description-copy {
+                margin-bottom: 85px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-family: Arial;
+                    strong {
+                        font-weight: 900;
+                    }
+    
+                    em {
+                        font-style: italic;
+                    }
+                }
+
+                ol {
+                    list-style: decimal inside;
+                }
+            
+                a {
+                    color: $baby-blue;
+                    font-weight: $medium;
+                    font-size: 18px;
+                    border-bottom: 1px solid $baby-blue;
+                    padding-bottom: 5px;
+                    font-family: Arial;
+
+                }
+            }
+
+            .doctor-dashboard__bio-education, .doctor-dashboard__bio-certifications {
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 25px;
+                    font-weight: $light;
+                    padding-bottom: 15px;
+                    font-family: Arial;
+
+            
+                }
+
+                ul {
+                    margin-left: 20px;
+                    li {
+                        font-size: 18px;
+                        font-family: Arial;
+                        list-style: disc;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                ol {
+                    list-style: decimal inside;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-family: Arial;
+                    strong {
+                        font-weight: 900;
+                    }
+    
+                    em {
+                        font-style: italic;
+                    }
+                }
+            
+                a {
+                    color: $baby-blue;
+                    font-weight: $medium;
+                    font-size: 18px;
+                    border-bottom: 1px solid $baby-blue;
+                    padding-bottom: 5px;
+                    font-family: Arial;
+
+                }
+            }
+
+            .doctor-dashboard__bio-certifications {
+                padding-bottom: 30px;
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-family: Arial;
+
+                    strong {
+                        font-weight: 900;
+                    }
+    
+                    em {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
